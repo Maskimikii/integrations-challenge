@@ -51,11 +51,20 @@ CREATE TABLE `upload_invoice_item` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
+CREATE TABLE `debug_dude` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `age` tinyint(1) DEFAULT NULL COMMENT 'Age',
+  `name` varchar(10) DEFAULT NULL COMMENT 'Name',
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Date ',
+  `money` decimal(12,2) DEFAULT NULL,
+  `gay` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'Is gay',
+  `stuff` json DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
+
 ALTER TABLE `upload_invoice_item`
 ADD CONSTRAINT `upload_invoice_item_FK`
 FOREIGN KEY (id) REFERENCES upload_invoice(id);
-
-
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

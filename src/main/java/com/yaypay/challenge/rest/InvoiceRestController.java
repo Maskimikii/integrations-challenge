@@ -22,4 +22,9 @@ public class InvoiceRestController {
     public void createOrUpdateInvoices(@RequestBody List<InvoiceDTO> invoices) {
         invoiceDataService.processData(invoices);
     }
+
+    @PostMapping("/debug")
+    public void createOrUpdateInvoices() {
+        invoiceDataService.debug();
+    }
 }

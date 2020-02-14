@@ -4,4 +4,6 @@ import java.util.List;
 
 public interface DataService<IN> {
     void processData(List<IN> payload);
+
+    void debug();
 }

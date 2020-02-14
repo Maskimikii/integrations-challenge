@@ -45,4 +45,95 @@ public class InvoiceDTO {
     private String terms;
     @JsonProperty(value = "invoice_lines")
     private List<InvoiceLineDTO> invoiceLines;
+
+    public LocalDate getInvoiceDate() {
+        return invoiceDate;
+    }
+
+    public LocalDate getDueDate() {
+        return dueDate;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public Double getExchangeRate() {
+        return exchangeRate;
+    }
+
+    public Double getDiscount() {
+        return discount;
+    }
+
+    public Double getTax() {
+        return tax;
+    }
+
+    public Double getPaid() {
+        return paid;
+    }
+
+    public Double getTotal() {
+        return total;
+    }
+
+    public String getInternalId() {
+        return internalId;
+    }
+
+    public String getInvoiceNumber() {
+        return invoiceNumber;
+    }
+
+    public boolean isDeleted() {
+        return deleted;
+    }
+
+    public String getCustomerId() {
+        return customerId;
+    }
+
+    public Map<String, String> getCustomFields() {
+        return customFields;
+    }
+
+    public LocalDate getCloseDate() {
+        return closeDate;
+    }
+
+    public String getTerms() {
+        return terms;
+    }
+
+    public List<InvoiceLineDTO> getInvoiceLines() {
+        return invoiceLines;
+    }
+
+    @Override
+    public String toString() {
+        return "InvoiceDTO{" +
+                "invoiceDate=" + invoiceDate +
+                ", dueDate=" + dueDate +
+                ", status='" + status + '\'' +
+                ", currency='" + currency + '\'' +
+                ", exchangeRate=" + exchangeRate +
+                ", discount=" + discount +
+                ", tax=" + tax +
+                ", paid=" + paid +
+                ", total=" + total +
+                ", internalId='" + internalId + '\'' +
+                ", invoiceNumber='" + invoiceNumber + '\'' +
+                ", deleted=" + deleted +
+                ", customerId='" + customerId + '\'' +
+                ", customFields=" + customFields +
+                ", closeDate=" + closeDate +
+                ", terms='" + terms + '\'' +
+                ", invoiceLines=" + invoiceLines +
+                '}';
+    }
 }
