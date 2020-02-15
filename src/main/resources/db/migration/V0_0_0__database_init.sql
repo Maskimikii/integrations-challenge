@@ -62,14 +62,3 @@ CREATE TABLE `upload_invoice_item` (
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- CREATE TABLE `debug_dude` (
---   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
---   `age` tinyint(1) DEFAULT NULL COMMENT 'Age',
---   `name` varchar(10) DEFAULT NULL COMMENT 'Name',
---   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Date ',
---   `money` decimal(12,2) DEFAULT NULL,
---   `gay` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'Is gay',
---   `stuff` json DEFAULT NULL,
---   PRIMARY KEY (`id`)
--- ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;

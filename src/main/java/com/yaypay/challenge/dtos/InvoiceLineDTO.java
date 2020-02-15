@@ -16,7 +16,7 @@ public class InvoiceLineDTO {
     private Double rate;
     @JsonProperty(value = "amount", required = true)
     private Double amount;
-    @JsonProperty(value = "invoice_id", required = true)
+    @JsonProperty(value = "invoiceId", required = true)
     private String invoiceId;
     @JsonProperty(value = "name", required = true)
     private String name;
